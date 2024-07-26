@@ -1,6 +1,9 @@
 import streamlit as st
 
+# Display logo and title
+st.image("Ani.ML_C_hrzHealth.png", width=200)  # Adjust the width as needed
 st.title("ANI.ML Health PDF Reader")
+st.subheader("Drag and Drop PDF to OCR")
 
 import streamlit as st
 import PyPDF2
