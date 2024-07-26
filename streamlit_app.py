@@ -40,7 +40,6 @@ def pdf_to_ocr(file_path):
     
     return ocr_text
 
-st.title("ANI.ML Health PDF Reader")
 
 # File upload
 uploaded_file = st.file_uploader("Upload a PDF file", type=["pdf"])
