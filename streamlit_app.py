@@ -2,7 +2,7 @@ import streamlit as st
 
 st.title("ANI.ML Health PDF Reader")
 
-
+import streamlit as st
 import PyPDF2
 import pytesseract
 from pdf2image import convert_from_path
@@ -11,15 +11,15 @@ import tempfile
 # Function to extract text from a PDF file
 def pdf_to_text(file_path):
     # Create a PDF file reader object
-    pdf_reader = PyPDF2.PdfFileReader(open(file_path, 'rb'))
+    pdf_reader = PyPDF2.PdfReader(open(file_path, 'rb'))
     
     # Initialize an empty string to store the text
     text = ""
     
     # Loop through all the pages and extract text
-    for page_num in range(pdf_reader.numPages):
-        page = pdf_reader.getPage(page_num)
-        text += page.extractText()
+    for page_num in range(len(pdf_reader.pages)):
+        page = pdf_reader.pages[page_num]
+        text += page.extract_text()
     
     return text
 
@@ -37,7 +37,7 @@ def pdf_to_ocr(file_path):
     
     return ocr_text
 
-st.title("Drag and Drop PDF to OCR")
+st.title("ANI.ML Health PDF Reader")
 
 # File upload
 uploaded_file = st.file_uploader("Upload a PDF file", type=["pdf"])
