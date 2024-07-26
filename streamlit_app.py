@@ -1,4 +1,4 @@
-pip install streamlit PyPDF2 pytesseract pdf2image
+!pip install streamlit PyPDF2 pytesseract pdf2image
 
 import streamlit as st
 
