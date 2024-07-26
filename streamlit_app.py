@@ -1,9 +1,10 @@
+pip install streamlit PyPDF2 pytesseract pdf2image
+
 import streamlit as st
 
 st.title("ANI.ML Health PDF Reader")
 
 
-import streamlit as st
 import PyPDF2
 import pytesseract
 from pdf2image import convert_from_path
