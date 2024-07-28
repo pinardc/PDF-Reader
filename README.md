@@ -1,4 +1,4 @@
-# 🎈 ANI.ML Health Inc. PDF Reader
+# ANI.ML Health Inc. PDF Reader
 
 A simple Streamlit-based runtime application for reading PDFs. 
 
