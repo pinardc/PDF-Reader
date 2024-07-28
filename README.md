@@ -3,7 +3,9 @@
 
 # ANI.ML Health Inc. PDF Reader
 
-A simple Streamlit-based runtime application for reading PDFs. 
+A simple Streamlit-based runtime application for reading PDFs (OCR built in). Simply copy & paste the output. 
+
+Website link: https://animl-pdfreader.streamlit.app/
 
 Contact us with any questions:
 we.care@animl.health
